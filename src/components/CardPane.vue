@@ -93,10 +93,10 @@ export default {
     alertTitle: "",
     alert: false,
     isEnd: false,
-    maxWidth: window.innerWidth / 20,
-    maxHeight: window.innerHeight / 15,
-    minWidth: window.innerWidth / 60,
-    minHeight: window.innerHeight / 40
+    maxWidth: 150,
+    maxHeight: 100,
+    minWidth: 40,
+    minHeight: 20
   }),
   methods: {
     numberToAlpha(num) {
