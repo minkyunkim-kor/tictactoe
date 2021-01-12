@@ -99,6 +99,11 @@ export default {
     minHeight: 20
   }),
   methods: {
+    init() {
+      this.selected = new Array(36).fill("white");
+      this.turn = 0;
+      this.clickIndex = new Array(36).fill(0);
+    },
     numberToAlpha(num) {
       return String.fromCharCode(num + 65);
     },

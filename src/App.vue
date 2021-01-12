@@ -61,7 +61,7 @@
                 x-large
               >
                 <v-icon x-large>
-                  mdi-pause-circle-outline
+                  mdi-stop-circle-outline
                 </v-icon>
               </v-btn>
             </v-col>
@@ -161,6 +161,9 @@ export default {
       this.$store.state.isStarted = !this.$store.state.isStarted;
       this.$store.state.blueTeamName = this.blueTeamName;
       this.$store.state.redTeamName = this.redTeamName;
+      if (this.$store.state.isStarted) {
+        this.$refs.card.init();
+      }
     },
     clickLevel() {
       let level = this.selectLevel;
